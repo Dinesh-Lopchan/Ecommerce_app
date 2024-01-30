@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".billing"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/lightblack"
+        android:text="Gurkha PC World"
+        android:textAlignment="center"
+        android:textColor="@color/Honeydew"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_gravity="center"
+        android:fadeScrollbars="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarSize="0dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:smoothScrollbar="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="BILLING DETAILS"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/number1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="Phone Number"
+                android:inputType="number|phone"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="Full name"
+                android:inputType="text"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="1st line of address"
+                android:inputType="textPostalAddress"
+                android:maxLength="20" />
+
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="City"
+                android:inputType="text"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="Post Code"
+                android:inputType="textPostalAddress"
+                android:maxLength="20" />
+
+            <TextView
+                android:id="@+id/bankdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="BANK DETAILS"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="Card number"
+                android:inputType="number"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:padding="15dp"
+                android:hint="Expiry date"
+                android:inputType="none|date"
+                android:maxLength="20" />
+
+            <EditText
+                android:id="@+id/cvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/box2"
+                android:hint="CVV"
+                android:padding="15dp"
+                android:inputType="number"
+                android:maxLength="20" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/checkout"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Checkout"
+            android:textColor="@color/white"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnchanger2"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/baseline_home_25"
+            android:background="@color/SkyBlue"
+            android:contentDescription="Home Icon"/>
+
+        <ImageButton
+            android:id="@+id/cart"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/baseline_shopping_cart_25"
+            android:background="@color/SkyBlue"
+            android:contentDescription="Shopping Cart Icon"/>
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/baseline_person_25"
+            android:background="@color/SkyBlue"
+            android:contentDescription="profile Icon"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "592390682323",
+    "project_id": "laptopmobileapp3",
+    "storage_bucket": "laptopmobileapp3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592390682323:android:572e92da9bdcddfe5b8626",
+        "android_client_info": {
+          "package_name": "com.example.laptopmobileapp3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9D_-Gg6nukfAiZf06AyYeIDf0luXXUVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
